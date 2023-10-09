@@ -39,7 +39,21 @@ export default defineConfig({
             name: "date",
             type: "datetime",
           },
-          
+          {
+            type: "string",
+            lable: "Category",
+            name: "category",
+            options: [
+              {
+                label: "དྲ་བའི་རྨི་ལམ་ཐོལ་བརྒལ་མངོན་འགྱུར།",
+                value: "tools",
+              },
+              {
+                label: "དྲ་རྒྱའི་འཇིག་རྟེན་འཇིག་ཉེན་ཀུན་བྲལ།",
+                value: "online-space",
+              },
+            ]
+          },
           {
             name: 'draft',
             label: 'Draft',
@@ -52,6 +66,7 @@ export default defineConfig({
             name: "layout",
             label: "Layout",
             required: true,
+            options: [ 'posts']
           },
 
 
@@ -64,6 +79,7 @@ export default defineConfig({
             type: "string",
             name: "excerpt",
             label: "Excerpt",
+            description: 'Optional',
           },
           {
             type: "rich-text",
@@ -75,5 +91,14 @@ export default defineConfig({
         ],
       },
     ],
+  },
+
+  search: {
+    tina: {
+      indexerToken: '91568bac22e327114cc3c053b7b98665ace0306b',
+      stopwordLanguages: ['eng']
+    },
+    indexBatchSize: 100,
+    maxSearchIndexFieldLength: 100
   },
 });
