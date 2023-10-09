@@ -1,0 +1,21 @@
+---
+layout: category
+permalink: /online-space/
+title: འཇིག་ཉེན་ཀུན་བྲལ་དྲ་རྒྱའི་འཇིག་རྟེན།
+archive: དྲ་རྒྱའི་འཇིག་རྟེན་འཇིག་ཉེན་ཀུན་བྲལ།
+---
+
+
+<section class="grid-3">
+      {% for post in site.categories.online-space limit: 10 %}
+        <div class="card">
+            <a href="{{post.url | absolute_url}}">
+                <img src="{{post.featuredImage}}" alt="{{post.featuredImage}}">
+                <h1>{{post.title}}</h1>
+                <p>{{post.excerpt}}</p>
+               
+            </a>
+            <span><p>{{post.date | date_to_string }}/{{post.category}}</p></span>
+        </div>
+      {% endfor %} 
+    </section>

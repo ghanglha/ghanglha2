@@ -1,0 +1,21 @@
+---
+layout: category
+permalink: /highlights/
+title: དབུ་འཕང་ཡར་བསྟོད་བོད་ཀྱི་སྐྱེས་མ།
+archive: བོད་ཀྱི་སྐྱེས་མའི་དབུ་འཕང་ཡར་བསྟོད།
+---
+
+
+<section class="grid-3">
+      {% for post in site.categories.highlights limit: 10 %}
+        <div class="card">
+            <a href="{{post.url | absolute_url}}">
+                <img src="{{post.featuredImage}}" alt="featuredImage">
+                <h1>{{post.title}}</h1>
+                <p>{{post.excerpt}}</p>
+                
+            </a>
+            <span><p>{{post.date | date_to_string }}/{{post.category}}</p></span>
+        </div>
+      {% endfor %} 
+    </section>

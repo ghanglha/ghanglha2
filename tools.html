@@ -1,0 +1,21 @@
+---
+layout: category
+permalink: /tools/
+title: ཐོལ་བརྒལ་མངོན་འགྱུར་དྲ་བའི་མྱོང་ཚོར།
+archive: དྲ་བའི་རྨི་ལམ་ཐོལ་བརྒལ་མངོན་འགྱུར།
+---
+
+
+<section class="grid-3">
+      {% for post in site.categories.tools limit: 10 %}
+        <div class="card">
+            <a href="{{ post.url | absolute_url }}">
+                <img src="{{post.featuredImage}}" alt="{{post.featuredImage}}">
+                <h1>{{post.title}}</h1>
+                <p>{{post.excerpt}}</p>
+                <!-- <p>{{post.url | absolute_url}}</p> -->
+            </a>
+            <span><p>{{post.date | date_to_string }}/{{post.category}}</p></span>
+        </div>
+      {% endfor %} 
+    </section>

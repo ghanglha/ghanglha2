@@ -1,0 +1,26 @@
+---
+layout: womens
+permalink: /womens/
+title: སྐྱེས་མའི་གྲུ་ཟུར་མཐོང་བ་ཀུན་སྨོན།
+---
+    <div class="container">
+    <section class="grid-2">
+{% for item in site.womens %}
+	<div class="img" style="background-image: url({{item.thumbnail}});"></div> 
+	   <div class="writer-box">
+	     	
+	   	 <div class="writer-meta">
+	   	 	<h2>{{item.name}}</h2>
+	       	<p><span>སྡེ་ཚན།</span>{{item.category}}</p>
+	       	<p><span>སྐད་ཡིག</span>{{item.language}}</p>
+	       	<p><span>སྡོད་ཡུལ།</span>{{item.birth-place}}</p>
+	       	<p><span>ཡོངས་གྲགས་ཀྱི་བརྩམས་ཆོས།</span>{{item.product}}</p>
+	   	 </div> 
+	   	   <p class="women-bio">{{item.content}}</p>
+	   </div>
+     
+
+{% endfor %}
+        </section>
+    </div>
+
