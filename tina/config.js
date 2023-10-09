@@ -3,6 +3,8 @@ import { defineConfig } from "tinacms";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
+
+
 export default defineConfig({
   branch,
   clientId: "a4ed18c0-481e-4ce9-adfe-dd5345af3ef1", // Get this from tina.io
@@ -33,6 +35,12 @@ export default defineConfig({
             required: true,
           },
           {
+            label: "Date",
+            name: "date",
+            type: "datetime",
+          },
+          
+          {
             name: 'draft',
             label: 'Draft',
             type: 'boolean',
@@ -45,6 +53,7 @@ export default defineConfig({
             label: "Layout",
             required: true,
           },
+
 
           {
             type: "image",
@@ -62,11 +71,7 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
-           {
-            type: "string",
-            name: "category",
-            label: "Category",
-          },
+          
         ],
       },
     ],
