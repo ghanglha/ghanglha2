@@ -38,6 +38,17 @@ export default defineConfig({
             label: "Layout",
             required: true,
           },
+
+          {
+            type: "image",
+            name: "featuredImage",
+            label: "Featured Image",
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt",
+          },
           {
             type: "rich-text",
             name: "body",
