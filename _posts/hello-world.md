@@ -1,12 +1,12 @@
 ---
 title: 'Hello, World!'
 layout: post
-category: tools
-featuredImage: /images/lantern-1.jpg
+featuredImage: ''
 excerpt: |
   fdfsdfsdfsdfsdfdsfsdf
 
   fsdfsdhghg
+category: tools
 ---
 
 ## Hello World!
