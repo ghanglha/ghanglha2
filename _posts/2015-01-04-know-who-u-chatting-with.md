@@ -1,10 +1,11 @@
 ---
-layout: post
 title: སྐད་འཕྲིན་ཀྱི་བདེ་འཇགས།
-category: online-space
+draft: true
+layout: post
 featuredImage: /assets/images/wechat-banner.jpg
 excerpt: |
   སྐད་འཕྲིན་ཀྱི་བདེ་འཇགས།
+category: online-space
 ---
 
 * སྐད་འཕྲིན་ཀྱི་བདེ་འཇགས།
