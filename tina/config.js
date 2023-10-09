@@ -33,6 +33,23 @@ export default defineConfig({
             required: true,
           },
           {
+            name: 'draft',
+            label: 'Draft',
+            type: 'boolean',
+            required: true,
+            description: 'If this is checked the post will not be published',
+          },
+          fields: [{
+              label: "Date",
+              name: "date",
+              type: "string",
+              ui: {
+                component: 'date',
+                dateFormat: 'YYYY-MM-DD',
+                parse: (value) => value && value.format('YYYY-MM-DD'),
+              },
+            }],
+          {
             type: "string",
             name: "layout",
             label: "Layout",
