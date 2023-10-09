@@ -1,7 +1,7 @@
 ---
 title: བུད་མེད་ལགས། ཁྱེད་ཀྱི་མིང་ལ་གཉོམ་ཆུང་མི་ཟེར།
 layout: post
-featuredImage: /assets/images/assets/images/pat4.jpg
+featuredImage: /assets/images/pat4.jpg
 excerpt: |
   སྐད་འཕྲིན་ཀྱི་བདེ་འཇགས།
 category: highlights
