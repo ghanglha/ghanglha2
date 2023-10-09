@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="menu-box">
+        
+
+        {% for post in site.categories.tools limit: 1 %}
+        <div class="menu">
+            <a href="{{post.category}}"><h2>དྲ་བའི་རྨི་ལམ་ཐོལ་བརྒལ་མངོན་འགྱུར།</h2> 
+                <div class="overlay"></div>        
+                <img src="/assets/icons/1.jpg" alt="/assets/icons/1.jpg"></a>
+        </div>
+        {% endfor %}
+        {% for post in site.categories.online-space limit: 1 %}
+        <div class="menu">
+            <a href="/{{post.category}}/"><h2>དྲ་རྒྱའི་འཇིག་རྟེན་འཇིག་ཉེན་ཀུན་བྲལ།</h2></a>
+            <img src="/assets/icons/2.jpg" alt="/assets/icons/1.jpg">
+        </div>
+        {% endfor %}
+        
+        <div class="menu">
+           <a href="/womens/"> <h2>སྐྱེས་མའི་གྲུ་ཟུར་མཐོང་བ་ཀུན་སྨོན།</h2></a>
+            <img src="/assets/icons/3.jpg" alt="/assets/icons/1.jpg">
+        </div>
+       
+        {% for post in site.categories.highlights limit: 1 %}
+        <div class="menu">
+            <a href="/{{post.category}}/"><h2>བོད་ཀྱི་སྐྱེས་མའི་དབུ་འཕང་ཡར་བསྟོད།</h2></a>
+            <img src="/assets/icons/4.jpg" alt="/assets/icons/1.jpg">
+        </div>
+        {% endfor %}
+    </div>
+</div>
