@@ -63,6 +63,10 @@ export default defineConfig({
                 label: "དྲ་རྒྱའི་འཇིག་རྟེན་འཇིག་ཉེན་ཀུན་བྲལ།",
                 value: "online-space",
               },
+               {
+                label: "བོད་ཀྱི་སྐྱེས་མའི་དབུ་འཕང་ཡར་བསྟོད།",
+                value: "highlights",
+              },
             ]
           },
           {
@@ -79,7 +83,6 @@ export default defineConfig({
             required: true,
             options: [ 'post']
           },
-
 
           {
             type: "image",
@@ -101,6 +104,52 @@ export default defineConfig({
           
         ],
       },
+      {
+      name: 'Womens',
+      label: 'Women Writers',
+      path: '_womens',
+      fields: [
+         {
+            label: 'Name',
+            name: 'title',
+            type: 'string',
+          },
+          {
+            label: 'Language',
+            component: 'radio-group',
+            name: 'language',
+            type: 'string',
+            direction: 'horizontal',
+            variant: 'radio',
+            options: [
+            { label: 'བོད་ཡིག', value: 'བོད་ཡིག' },
+            { label: 'རྒྱ་ཡིག', value: 'རྒྱ་ཡིག' },
+            { label: 'བོད་ཡིག་དང་རྒྱ་ཡིག་', value: 'བོད་ཡིག་དང་རྒྱ་ཡིག་' }
+            ],
+          },
+           {
+            label: 'Birth Place',
+            name: 'birthplace',
+            type: 'string',
+          },
+          {
+            type: "image",
+            name: "featuredImage",
+            label: "Picture",
+          },
+          {
+            label: 'Product',
+            name: 'product',
+            type: 'string',
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+          },
+      ],
+    }
     ],
   },
 

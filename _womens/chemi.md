@@ -3,7 +3,7 @@ layout: womens
 name: འཆི་མེད།
 category: སྙན་ངག
 language: བོད་ཡིག
-birth-place: བོད་།
+birthplace: བོད་།
 product:  'ཟླ་བའི་རྨི་ལམ། 2012/ ཆུའི་ལང་ཚོ། 2016'
 thumbnail: '../assets/images/womens-photos/chemi.jpg'
 ---
