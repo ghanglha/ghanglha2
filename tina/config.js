@@ -134,7 +134,7 @@ export default defineConfig({
           },
           {
             type: "image",
-            name: "featuredImage",
+            name: "thumbnail",
             label: "Picture",
           },
           {
