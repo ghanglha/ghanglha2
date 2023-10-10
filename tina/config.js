@@ -27,6 +27,16 @@ export default defineConfig({
         label: "Posts",
         path: "_posts",
         format: 'md',
+        ui: {
+        filename: {
+          slugify: values => {
+            const postDate = values.date ? new Date(values.date) : new Date();
+            return `${postDate.toISOString().split("T")[0]}-${(values.title || "")
+              .toLowerCase()
+              .replace(/ /g, "-")}`.replace(/[^\w\.\/-\s]/gi, "");
+          }
+        }
+      },
         fields: [
           {
             type: "string",
@@ -59,7 +69,7 @@ export default defineConfig({
             name: 'draft',
             label: 'Draft',
             type: 'boolean',
-            required: true,
+            required: false,
             description: 'If this is checked the post will not be published',
           },
           {
@@ -67,7 +77,7 @@ export default defineConfig({
             name: "layout",
             label: "Layout",
             required: true,
-            options: [ 'posts']
+            options: [ 'post']
           },
 
 
