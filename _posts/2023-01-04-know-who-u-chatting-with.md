@@ -1,11 +1,12 @@
 ---
 title: སྐད་འཕྲིན་ཀྱི་བདེ་འཇགས།
-draft: true
+draft: false
 layout: post
 featuredImage: /assets/images/wechat-banner.jpg
 excerpt: |
   སྐད་འཕྲིན་ཀྱི་བདེ་འཇགས།
 category: online-space
+date: 2023-03-02T18:30:00.000Z
 ---
 
 * སྐད་འཕྲིན་ཀྱི་བདེ་འཇགས།

@@ -8,6 +8,7 @@ archive: དྲ་རྒྱའི་འཇིག་རྟེན་འཇིག�
 
 <section class="grid-3">
       {% for post in site.categories.online-space limit: 10 %}
+      {% if post.draft == false %}
         <div class="card">
             <a href="{{post.url | absolute_url}}">
                 <img src="{{post.featuredImage}}" alt="{{post.featuredImage}}">
@@ -17,5 +18,6 @@ archive: དྲ་རྒྱའི་འཇིག་རྟེན་འཇིག�
             </a>
             <span><p>{{post.date | date_to_string }}/{{post.category}}</p></span>
         </div>
+        {% endif %}
       {% endfor %} 
     </section>
