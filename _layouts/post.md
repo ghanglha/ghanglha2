@@ -3,7 +3,7 @@
         <div class="banner-featured ">
             <div class="banner-title article-heading">
                 <h1>{{page.title}}</h1>
-                <span>10/14/2023</span>
+                <span>{{page.date | date_to_string }}</span>
             </div>
         </div>
     </div>
