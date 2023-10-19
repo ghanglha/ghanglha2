@@ -148,6 +148,13 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
+          {
+            name: 'draft',
+            label: 'Draft',
+            type: 'boolean',
+            required: false,
+            description: 'If this is checked the post will not be published',
+          },
       ],
     }
     ],

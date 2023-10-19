@@ -6,6 +6,7 @@ title: སྐྱེས་མའི་གྲུ་ཟུར་མཐོང་བ�
     <div class="container">
     <section class="grid-2">
 {% for item in site.womens %}
+	{% if item.draft == false %}
 	<div class="img" style="background-image: url({{item.thumbnail}});"></div> 
 	   <div class="writer-box">
 	     	
@@ -19,7 +20,7 @@ title: སྐྱེས་མའི་གྲུ་ཟུར་མཐོང་བ�
 	   	   <p class="women-bio">{{item.content}}</p>
 	   </div>
      
-
+	{% endif %}
 {% endfor %}
         </section>
     </div>
