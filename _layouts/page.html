@@ -1,3 +1,18 @@
 {% include head.html %}
-    {{content}}
+    <div class="container-flued blog-container" style='background-image:url(/assets/icons/grassland.jpg)'>
+        <div class="banner-featured ">
+            <div class="banner-title article-heading">
+                <h1>Error: {{page.error}}</h1>
+            
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <section>
+        <article>
+           {{content}}
+        </article>
+            {% include aside.html %}
+    </section>
+    </div>
 {% include foot.html %}
