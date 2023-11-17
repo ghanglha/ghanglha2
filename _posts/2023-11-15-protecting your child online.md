@@ -1,10 +1,10 @@
 ---
 title: 'ཁྱེད་ནི་ཁྱིམ་བདག་ཅིག་ཡིན་ནམ། '
-date: '2023-11-15T05:00:00.000Z'
+date: 2023-11-15T05:00:00.000Z
 category: online-space
 layout: post
+featuredImage: /assets/images/Tibetan-clinic-infant-mortality-1.jpeg
 ---
-
 
 ཁྱེད་ནི་ཁྱིམ་བདག་ཅིག་ཡིན་ནམ། ཁྱོད་ཀྱི་བྱིས་པར་ལག་འཁྱེར་ཁ་པར་(ཡང་ན་གློག་ཀླད་)ཡོད་དམ།
 
