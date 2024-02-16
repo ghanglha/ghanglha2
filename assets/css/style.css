@@ -73,7 +73,7 @@ p{
         width:250px
     }
     .banner .qr-code{
-        background-image: url(/assets/icons/qr-code.jpg);
+        
         background-size: cover;
         width: 200px;
         height:200px;
