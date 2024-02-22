@@ -1,10 +1,12 @@
 # ganglha.net
 
-Jekyll blog CMS with Tina integration.
+Jekyll with Tina headless CMS integration.
 
 ## Prerequisition
+- Ruby Gems
 - Knowledge of Jekyll Static Site generator
 - Tina headless CMS for Content management
+- Node.js
 - Basic knowledge of Node Package Manager (NPM)
 
 ## Process:
