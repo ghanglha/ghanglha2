@@ -1,5 +1,5 @@
 <aside>
-    <div class="menu-box menu-box-sidebar">
+    <div class=" menu-box-sidebar">
         {% for post in site.categories.tools limit: 1 %}
         <div class="menu">
             <a href="{{site.baseurl}}/{{post.category}}"><h2>དྲ་བའི་རྨི་ལམ་ཐོལ་བརྒལ་མངོན་འགྱུར།</h2> 
@@ -13,12 +13,12 @@
             <img src="/assets/icons/2s.jpg" alt="/assets/icons/2.jpg"></a>
         </div>
         {% endfor %}
-        
+       <!-- 
         <div class="menu">
             <a href="/tibetan-women/"><h2>སྐྱེས་མའི་གྲུ་ཟུར་མཐོང་བ་ཀུན་སྨོན།</h2>
             <img src="/assets/icons/3s.jpg" alt="/assets/icons/3.jpg"></a>
         </div>
-       
+       -->
         {% for post in site.categories.highlights limit: 1 %}
         <div class="menu">
             <a href="{{site.baseurl}}/{{post.category}}"><h2>བོད་ཀྱི་སྐྱེས་མའི་དབུ་འཕང་ཡར་བསྟོད།</h2>

@@ -21,6 +21,7 @@
         *{font-weight: 100;
         transition: .2s;
         margin:0px;
+        text-decoration: none;
         
         }
 h1,h2,h3,h4,h5,h6,span{
@@ -33,18 +34,19 @@ p{
         body{width:100vw;
             margin:0px auto;
             font-family: qo-title;
+            background-color:#605c87;
             
         }
         .container-flued{
             height:350px;
-            background:url(/assets/icons/grassland.jpg);
-            background-position-y:center;
-          
+            background-image:url(/assets/icons/grassland.jpg);
+            background-size: cover;
+            position: relative;
+            
         }
         .container{
             max-width:1200px;
-            margin:0px auto;
-            margin-bottom: 100px;
+            margin:0px auto; 
         }
         .container-flued{
             overflow: hidden;
@@ -56,6 +58,19 @@ p{
         grid-template-columns: 1fr 400px;
         color: white;
         text-align: center;
+        position: relative;
+        
+
+       }
+       .banner-overlay{
+        height:100%;
+        width:100%;
+        background: rgb(232,232,232);
+background: linear-gradient(0deg, rgba(232,232,232,0.3785889355742297) 0%, rgba(91,167,242,0.7175245098039216) 56%, rgba(30,75,120,1) 100%);
+        position: absolute;
+        background-size: 200px;
+        
+        top:0px;
         
        }
        .banner h1{
@@ -70,7 +85,8 @@ p{
     }
    
     .banner .gif{
-        width:250px
+        width:250px;
+        
     }
     .banner .qr-code{
         
@@ -85,12 +101,43 @@ p{
         padding:20px;
         position: relative;
     }
+
+    .main-menu{
+        transform: translateY(-80px);
+        margin:20px;
+        overflow: hidden;
+        border-radius: 50px;
+       background-color: rgba(255, 255, 255, .8);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(5px);
+        display: flex;
+        border:5px solid #ffffff;
+        justify-content: space-around;
+       box-shadow: inset 0px 0px 9px  #222222;
+       overflow: hidden;
+    }
+    .menu-items{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .manu-items svg{
+        width:50px;
+    }
+    .menu-items:hover{
+    background-color: rgba(255, 255, 255, .3);
+    transform:translateY(-10px);
+    }
+    .main-menu h2{
+        color:black;
+    }
 p strong{
     background-color: lightgray ;
     border-radius: 3px;
     padding:3px 3px;
 }
-    .menu h2{
+   aside .menu h2{
      z-index: 1;
     position: absolute;
     top: 50%;
@@ -105,19 +152,16 @@ p strong{
     .menu:hover h2{
         font-size: 35px;
     }
-    .menu img{
+    aside .menu img{
         border-radius: 5px;
         transition:.2s;
         transform: scale(1.03);
     }
-    .menu:hover img{
+    aside .menu:hover img{
         transform: scale(1);
     }
-   .container  .menu-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding:60px;
-    }
+
+
   
    img{width:100%;
     }
@@ -138,29 +182,126 @@ p strong{
         padding:20px;
         border-radius: 10px;
      }
+
     .card-wide{
-        background:#cabba8;
-    
+        position:relative;
+        top:40px;
+        width:85%;
+        background:#004b99;
+        height:auto;
+        margin:0px auto;
+        padding:20px;
+        background-image: url(/assets/border/border-tl.png),url(/assets/border/border-br.png),url(/assets/border/border-tr.png),url(/assets/border/border-bl.png);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: 10 10,99% 99%,99% 10,10 99%;
+        border:10px solid #d86c03;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px #222222;
+        border-image:url(woodframe2.jpg) 30 round;
+    }
+    .card-wide:hover{
+        background-size: 140px;
+    }
+    .container h1{
+        color:#d86c03;
+        text-align: center;
     }
     .card-wide p{
         font-size: 20px;
-        color: #333333;
+        color: orange
    
     }
     .card-wide h2{
         padding: 20px;
-        color:white;
+        color:orange
+    }
+    .card{
+        position: relative;
+        background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        border-radius: 10px;
+       
+        box-shadow: 2px 2px 5px  #222222;
+        margin:20px;
+        overflow: hidden;
+    }
+    .card:hover{
+        transform: translateY(-10px);
+    }
+    .card p,.card h1{
+        padding: 5px 20px;
+        color:#525252;
+    }
+    .card h1{
+    padding-top:10px;
+    text-align: left;
+    color:red;
+    font-weight: 500
     }
     .card a{
         text-decoration: none;
         color: #333333
+    }
+    .card-meta {
+        padding:3px 10px;
+        margin:5px;
+        border-radius: 10px;
+        display:flex;
+        justify-content: space-between;
+    }
+    .card-meta>span+span{
+        border:2px solid #e3e3e3;
+        padding:2px 10px;
+        border-radius: 10px;
+        font-family: Verdana;
+        font-size: 12px;
+        vertical-align: baseline;
+    }
+    .card-meta span{
+        vertical-align: middle;
+    }
+    .blue{background:blue;}
+    .white{background:white;}
+    .red{background:red;}
+    .yellow{background:yellow;}
+    .green{background: green}
+    .card .flag{
+        height:35px;
+        position: absolute;
+        bottom:0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 5px;
+    }
+    .flag div{
+        width:75px;
+        
+    }
+    .card:hover .flag{
+        transform: translateX(-40px);
+    }
+    .card-meta{
+        padding: 20px
     }
     .bio{
         margin-top:30px;
         padding: 30px;
     }
     .footer{
-        height:200px
+        /*
+     background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(67,52,93,1) 91%, rgba(67,52,93,1) 100%);
+    */
+        background-image:url(/assets/icons/tibet-landscape.png);
+        height:300px;
+        background-size: cover;
     }
 
 .grid-3{
@@ -168,21 +309,26 @@ p strong{
     grid-template-columns: 1fr 1fr 1fr ;
     margin:10px;
 
-}
-.card{
-  margin:10px;
 
 }
-.card img{border-radius: 5px;
+
+.card img{
         height: 200px;
 }
-.card h1{padding-top:10px;}
-
+.card:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: .8;
+    }
 
 .navigator{
     width:80px;
     height:80px;
-    background:#b46161;
+    background-color: #FBAB7E;
+background-image: -webkit-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+background-image: -moz-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+background-image: -o-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
     position: fixed;
     top:40px;
     right:20px;
@@ -209,6 +355,10 @@ article,aside{
 padding: 30px;
 color:#424242;
 font-size: 20px;
+background-color: #e5d6ff;
+border-radius: 20px;
+margin: 10px 5px;
+}
 }
 article img{
     width: 80%;
@@ -257,16 +407,8 @@ section{
     display: grid;
     grid-template-columns: 800px auto;
 }
-aside .menu-box{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    font-size: 20px;
-}
-.container aside .menu-box{
-   display: block;
-   padding:0px; 
-}
+
+
 
 .article-heading h1{
     color:white;
@@ -300,7 +442,6 @@ aside .menu h2 {
     color: white;
     text-shadow: 0px 0px 9px #000000;
     font-size: 40px;
-
 
 }
 table{
@@ -344,6 +485,7 @@ thead th{background:#f0dbc0; padding:10px; font-weight: 800;}
     body
     .container-flued{
         max-height:200px;
+
     }
     .banner{
         grid-template-columns: 60% 40%;
@@ -381,11 +523,7 @@ thead th{background:#f0dbc0; padding:10px; font-weight: 800;}
     .card-wide{
         grid-template-columns: 1fr;
     }
-    .container .menu-box {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0px;
-    }
+
         /* Article responsive */
         section{
             grid-template-columns:1fr;
@@ -415,4 +553,23 @@ thead th{background:#f0dbc0; padding:10px; font-weight: 800;}
     grid-template-columns: 1fr;
     text-align: center;
     }
+    .main-menu{
+        flex-direction: column;
+        transform: translateY(0px);
+        border-radius: 20px
+    }
+
+ .menu-items{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+          vertical-align: baseline;
+
   }
+  .menu-items h2{font-size: 20px;
+   
+  }
+  .menu-items svg{
+        width:50px;
+  }
+}
