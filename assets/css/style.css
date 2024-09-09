@@ -25,7 +25,7 @@
         
         }
 h1,h2,h3,h4,h5,h6,span{
-    color:#95a3bd;
+    color:#e5d6ff;
 }
 p{
     padding: 5px;
@@ -257,10 +257,11 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     }
     .card-meta {
         padding:3px 10px;
-        margin:5px;
-        border-radius: 10px;
+        
+      
         display:flex;
         justify-content: space-between;
+        background:#605c87;
     }
     .card-meta>span+span{
         border:2px solid #e3e3e3;
@@ -360,12 +361,12 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 
 article,aside{
 padding: 30px;
-color:#424242;
+color:#ffffff;
 font-size: 20px;
-background-color: #e5d6ff;
 border-radius: 20px;
 margin: 10px 5px;
 }
+
 }
 article img{
     width: 80%;
