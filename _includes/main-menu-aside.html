@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="widget">
+        <h2 class="widget-title">འབྲེལ་ཡོད་གནས་ཚུལ་།</h2>
+        <ul>
+            {% for post in site.posts offset:1 limit:8 %}
+            {% if post.category == page.category %}
+            <li><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="widget">
+        <h2 class="widget-title">སདེ་ཚན།</h2>
+        <div class="main-menu-aside">
+            {% for post in site.categories.tools limit: 1 %}
+            <a href="{{post.category}}">
+                <div class="menu-items">
+                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48">
+                    <radialGradient id="3ZiVhXF2zC5Hwg7NbMctDa_Oa7ycM2DCmbK_gr1" cx="30.146" cy="17.914" r="17.08" gradientUnits="userSpaceOnUse"><stop offset=".771" stop-color="#787f85"></stop><stop offset=".819" stop-color="#838a91"></stop><stop offset=".931" stop-color="#99a1aa"></stop><stop offset="1" stop-color="#a1aab3"></stop></radialGradient><path fill="url(#3ZiVhXF2zC5Hwg7NbMctDa_Oa7ycM2DCmbK_gr1)" d="M17.464,21.808l8.728,8.728L14.536,42.192c-2.41,2.41-6.318,2.41-8.728,0l0,0    c-2.41-2.41-2.41-6.318,0-8.728L17.464,21.808z"></path><linearGradient id="3ZiVhXF2zC5Hwg7NbMctDb_Oa7ycM2DCmbK_gr2" x1="19.314" x2="38.806" y1="8.669" y2="28.161" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a1aab3"></stop><stop offset="1" stop-color="#8f979e"></stop></linearGradient><path fill="url(#3ZiVhXF2zC5Hwg7NbMctDb_Oa7ycM2DCmbK_gr2)" d="M36.883,19.304c-2.261,2.261-5.927,2.261-8.188,0c-2.261-2.261-2.261-5.927,0-8.188  c0.552-0.552,2.775-2.775,5.04-5.04c0.543-0.543,0.302-1.492-0.444-1.675c-1.836-0.452-3.811-0.546-5.866-0.159 c-6.026,1.136-10.725,6.178-11.35,12.279c-0.912,8.895,6.511,16.317,15.406,15.403c6.1-0.627,11.141-5.326,12.276-11.352    c0.387-2.054,0.292-4.028-0.159-5.864c-0.184-0.746-1.132-0.987-1.675-0.444C39.658,16.529,37.435,18.753,36.883,19.304z"></path><linearGradient id="3ZiVhXF2zC5Hwg7NbMctDc_Oa7ycM2DCmbK_gr3" x1="12.789" x2="7.182" y1="40.789" y2="35.182" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset=".242" stop-color="#f2f2f2"></stop><stop offset="1" stop-color="#ccc"></stop></linearGradient><circle cx="10" cy="38" r="4" fill="url(#3ZiVhXF2zC5Hwg7NbMctDc_Oa7ycM2DCmbK_gr3)"></circle><linearGradient id="3ZiVhXF2zC5Hwg7NbMctDd_Oa7ycM2DCmbK_gr4" x1="8.129" x2="11.411" y1="36.129" y2="39.411" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0d61a9"></stop><stop offset=".363" stop-color="#0e5fa4"></stop><stop offset=".78" stop-color="#135796"></stop><stop offset="1" stop-color="#16528c"></stop></linearGradient><circle cx="10" cy="38" r="2" fill="url(#3ZiVhXF2zC5Hwg7NbMctDd_Oa7ycM2DCmbK_gr4)"></circle>
+                </svg>
+                <h2>དྲ་བའི་རྨི་ལམ་ཐོལ་བརྒལ་མངོན་འགྱུར།</h2> 
+            </div>
+        </a>
+        {% endfor %}
+        {% for post in site.categories.online-space limit: 1 %}
+        <a href="/{{post.category}}/">
+            <div class="menu-items">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48">
+                    <path fill="#50e6ff" d="M39,16v25c0,1.105-0.895,2-2,2H11c-1.105,0-2-0.895-2-2V7c0-1.105,0.895-2,2-2h17l3,8L39,16z"></path><linearGradient id="VWJODR~F49S8JZXNLPMJka_Ygov9LJC2LzE_gr1" x1="28.529" x2="33.6" y1="2761.471" y2="2756.4" gradientTransform="translate(0 -2746)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3079d6"></stop><stop offset="1" stop-color="#297cd2"></stop></linearGradient><path fill="url(#VWJODR~F49S8JZXNLPMJka_Ygov9LJC2LzE_gr1)" d="M28,5v9c0,1.105,0.895,2,2,2h9L28,5z"></path><path fill="#057093" d="M32.5,24h-17c-0.276,0-0.5-0.224-0.5-0.5v-1c0-0.276,0.224-0.5,0.5-0.5h17c0.276,0,0.5,0.224,0.5,0.5 v1C33,23.776,32.776,24,32.5,24z"></path><path fill="#057093" d="M30.5,28h-15c-0.276,0-0.5-0.224-0.5-0.5v-1c0-0.276,0.224-0.5,0.5-0.5h15c0.276,0,0.5,0.224,0.5,0.5   v1C31,27.776,30.776,28,30.5,28z"></path><path fill="#057093" d="M32.5,32h-17c-0.276,0-0.5-0.224-0.5-0.5v-1c0-0.276,0.224-0.5,0.5-0.5h17c0.276,0,0.5,0.224,0.5,0.5   v1C33,31.776,32.776,32,32.5,32z"></path><path fill="#057093" d="M30.5,36h-15c-0.276,0-0.5-0.224-0.5-0.5v-1c0-0.276,0.224-0.5,0.5-0.5h15c0.276,0,0.5,0.224,0.5,0.5   v1C31,35.776,30.776,36,30.5,36z"></path>
+                </svg>
+                <h2>དྲ་རྒྱའི་འཇིག་རྟེན་འཇིག་ཉེན་ཀུན་བྲལ།</h2>
+            </div>
+        </a>
+        {% endfor %}
+
+        {% for post in site.categories.highlights limit: 1 %}
+        <a href="/{{post.category}}/">
+            <div class="menu-items">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48">
+                    <radialGradient id="kswHaDlBT5hwNncEGHa_oa_8vsjJt13MQHk_gr1" cx="23.617" cy="27.953" r="21.338" gradientUnits="userSpaceOnUse"><stop offset=".376" stop-color="#261103"></stop><stop offset=".68" stop-color="#431d06"></stop><stop offset="1" stop-color="#662c09"></stop></radialGradient><path fill="url(#kswHaDlBT5hwNncEGHa_oa_8vsjJt13MQHk_gr1)" d="M24,8.645c-16.026,0-20,25.877-20,25.877c0,4.607,2.139,8.643,6.62,9.713    C14.457,45.151,19.286,46,24,46s9.543-0.849,13.38-1.766c4.481-1.07,6.62-5.106,6.62-9.713C44,34.521,40.026,8.645,24,8.645z"></path><radialGradient id="kswHaDlBT5hwNncEGHa_ob_8vsjJt13MQHk_gr2" cx="-252.69" cy="6.414" r="16.758" gradientTransform="matrix(-.9667 0 0 .9667 -220.267 19.667)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf54"></stop><stop offset=".261" stop-color="#fdcb4d"></stop><stop offset=".639" stop-color="#f7c13a"></stop><stop offset="1" stop-color="#f0b421"></stop></radialGradient><path fill="url(#kswHaDlBT5hwNncEGHa_ob_8vsjJt13MQHk_gr2)" d="M24,7.733c6.908,0,14,2.8,14,17.733c0,1.195,0,4.525,0,5.802C38,36.6,29.426,44,24,44    s-14-7.4-14-12.731c0-1.277,0-4.607,0-5.802C10,10.533,17.092,7.733,24,7.733z"></path><radialGradient id="kswHaDlBT5hwNncEGHa_oc_8vsjJt13MQHk_gr3" cx="13.053" cy="3.729" r="49.757" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c26715"></stop><stop offset=".508" stop-color="#b85515"></stop><stop offset="1" stop-color="#ad3f16"></stop></radialGradient><path fill="url(#kswHaDlBT5hwNncEGHa_oc_8vsjJt13MQHk_gr3)" d="M24,3c-7.982,0-10,5-10,5C10.755,8.479,4,12.978,4,34.505c0,5.848,2.928,7.995,4,8.62   c-7.76-22.812,10.021-20.171,7.375-32.872c7.62,16.934,32.175,1.963,25.349,32.338C42.58,41.18,44,38.349,44,34.505 C44,13.265,35.383,3,24,3z"></path>
+                </svg>
+                <h2>བོད་ཀྱི་སྐྱེས་མའི་དབུ་འཕང་ཡར་བསྟོད།</h2>
+
+            </div>
+        </a>
+        {% endfor %}
+
+    </div>
+</div>
+
+
+</div>
+
+

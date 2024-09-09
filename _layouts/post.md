@@ -1,5 +1,5 @@
 {% include head.html %}
-    <div class="container-flued blog-container" style='background-image:url({{page.featuredImage}})'>
+    <div class="container-flued blog-container" style='background-image:url({{page.featuredImage}});'>
         <div class="banner-featured ">
             <div class="banner-title article-heading">
                 <h1>{{page.title}}</h1>
@@ -12,7 +12,7 @@
         <article>
            {{content}}
         </article>
-            {% include aside.html %}
+            {% include main-menu-aside.html %}
     </section>
     </div>
 {% include foot.html %}

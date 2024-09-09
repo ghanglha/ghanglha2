@@ -42,6 +42,7 @@ p{
             background-image:url(/assets/icons/grassland.jpg);
             background-size: cover;
             position: relative;
+  
             
         }
         .container{
@@ -113,7 +114,7 @@ background: linear-gradient(0deg, rgba(232,232,232,0.3785889355742297) 0%, rgba(
         display: flex;
         border:5px solid #ffffff;
         justify-content: space-around;
-       box-shadow: inset 0px 0px 9px  #222222;
+       box-shadow:  0px 0px 9px #3e3b3b;
        overflow: hidden;
     }
     .menu-items{
@@ -126,11 +127,17 @@ background: linear-gradient(0deg, rgba(232,232,232,0.3785889355742297) 0%, rgba(
         width:50px;
     }
     .menu-items:hover{
-    background-color: rgba(255, 255, 255, .3);
+    
     transform:translateY(-10px);
     }
     .main-menu h2{
-        color:black;
+        color:#605c87;
+    }
+    .main-menu-aside{
+        padding-top: 20px;
+    }
+    .main-menu-aside h2{
+        color: white
     }
 p strong{
     background-color: lightgray ;
@@ -241,7 +248,7 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     .card h1{
     padding-top:10px;
     text-align: left;
-    color:red;
+    color:black;
     font-weight: 500
     }
     .card a{
@@ -414,7 +421,7 @@ section{
     color:white;
 font-size: 40px;
 padding-top: 20px;
-text-shadow: 0px 0px 9px #000000;
+text-shadow: 2px 2px #1a1a1a;
 }
 .article-heading span{
 font-size: 23px;
@@ -579,3 +586,53 @@ thead th{background:#f0dbc0; padding:10px; font-weight: 800;}
      background-size: 100px;
   }
 }
+.widget{
+padding: 10px;
+}
+.widget-title{
+    text-align: center;
+    color:#e5d6ff;
+    
+    
+    padding: 5px;
+    border-radius: 10px;
+}
+.widget {
+    background:#4d4b62;
+    border-radius: 10px;
+    margin:10px;
+    padding: 20px
+}
+.widget ul{
+    margin:0px;
+    padding: 0px;
+}
+.widget ul li{
+    
+    border-bottom:1px solid #605c87;
+    padding:10px;
+    list-style-type: none;
+    color:#938ec3;
+    border-radius: 10px;
+}
+.widget li a{
+   color:#938ec3; 
+   font-size: 20px;
+}
+.widget li:hover {
+    background:#3c3b46;
+}
+.widget .menu-items svg{
+    width:40px;
+
+}
+.widget .menu-items{
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    padding: 0px
+}
+.widget .menu-items h2{color:#938ec3;
+ padding: 5px;
+}
+.widget .menu-items:hover{background:#3c3b46;}
