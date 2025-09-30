@@ -2,10 +2,14 @@
   "name": "jekyll-tinacms-site",
   "version": "1.0.0",
   "description": "Jekyll + TinaCMS site deployable on Vercel",
+  "main": "index.js",
   "scripts": {
-    "dev": "bundle exec jekyll serve",
-    "build": "gem install bundler && rm -rf _site && bundle config set deployment true && bundle install && bundle exec jekyll build && tinacms build"
+    "dev": "tinacms dev -c \"bundle exec jekyll serve\"",
+    "build": "tinacms build && jekyll build"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@tinacms/cli": "^1.11.0",
     "tinacms": "^1.5.20"
