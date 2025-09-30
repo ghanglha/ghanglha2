@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "tinacms dev -c \"bundle exec jekyll serve\"",
-    "build": "tinacms build && jekyll build"
+    "build": "rm -rf _site && tinacms build && jekyll build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@tinacms/cli": "^1.11.0",
-    "tinacms": "^2.9.0"
+    "tinacms": "^1.5.20"
   },
   "overrides": {
     "final-form": "4.20.8"
