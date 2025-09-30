@@ -4,7 +4,7 @@
   "description": "Jekyll + TinaCMS site deployable on Vercel",
   "main": "index.js",
   "scripts": {
-    "dev": "bundle exec jekyll serve",
+    "dev": "tinacms dev -c \"bundle exec jekyll serve\"",
     "build": "rm -rf _site && tinacms build && jekyll build"
   },
   "keywords": [],
