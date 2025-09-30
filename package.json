@@ -1,11 +1,11 @@
 {
-  "name": "jekyll-test",
+  "name": "jekyll-tinacms-site",
   "version": "1.0.0",
-  "description": "This directory is a brief example of a [Jekyll](https://jekyllrb.com/) site that can be deployed to Vercel with zero configuration.",
+  "description": "Jekyll + TinaCMS site deployable on Vercel",
   "main": "index.js",
   "scripts": {
-    "dev": "tinacms dev -c \"bundle exec jekyll serve\"",
-    "build": "rm -rf _site && tinacms build && jekyll build"
+    "dev": "bundle exec jekyll serve",
+    "build": "rm -rf _site && bundle install && bundle exec jekyll build && tinacms build"
   },
   "keywords": [],
   "author": "",
