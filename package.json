@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "bundle exec jekyll serve",
-    "build": "gem install bundler && rm -rf _site && bundle install && bundle exec jekyll build && tinacms build"
+    "build": "rm -rf _site && tinacms build && jekyll build"
   },
   "keywords": [],
   "author": "",
