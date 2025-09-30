@@ -11,7 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tinacms/cli": "^1.5.29",
-    "tinacms": "^1.5.20"
+    "@tinacms/cli": "^1.11.0",
+    "tinacms": "^2.9.0"
+  },
+  "overrides": {
+    "final-form": "4.20.8"
   }
 }
