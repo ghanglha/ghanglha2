@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-ruby "~> 3.3.0"
+ruby "~> 3.2.3"
 
 # Jekyll core
-gem "jekyll", "~> 4.3.4"
+gem "jekyll", "~> 4.4.1"
 gem "webrick", "~> 1.3"         # Required for Ruby >= 3.0
 gem "jekyll-sass-converter"
 gem "minima", "~> 2.5"
