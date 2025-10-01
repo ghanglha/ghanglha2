@@ -8,6 +8,7 @@ gem "webrick", "~> 1.3"         # Required for Ruby >= 3.0
 gem "jekyll-sass-converter"
 gem "minima", "~> 2.5"
 gem "sass-embedded", "~> 1.69.0"
+gem 'bigdecimal'
 
 # Plugins
 group :jekyll_plugins do
