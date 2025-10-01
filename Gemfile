@@ -5,7 +5,7 @@ ruby "~> 3.3.0"
 # Jekyll core
 gem "jekyll", "~> 4.4.1"
 gem "webrick", "~> 1.3"         # Required for Ruby >= 3.0
-gem "jekyll-sass-converter"
+# gem "jekyll-sass-converter"
 gem "minima", "~> 2.5"
 
 # Plugins
