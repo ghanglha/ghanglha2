@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@tinacms/cli": "^2.1.7",
-    "tinacms": "^1.6.7"
+    "tinacms": "3.7.3"
   },
   "overrides": {
     "final-form": "4.20.8"
