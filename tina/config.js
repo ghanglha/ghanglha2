@@ -33,7 +33,7 @@ export default defineConfig({
             const postDate = values.date ? new Date(values.date) : new Date();
             return `${postDate.toISOString().split("T")[0]}-${(values.title || "")
               .toLowerCase()
-              .replace(/ /g, "-")}`.replace(/[^\w\.\/-\s]/gu, "");
+              .replace(/ /g, "-")}`.replace(/[^\p{L}\p{N}\.\/\-\s]/gu, "");
           }
         }
       },
