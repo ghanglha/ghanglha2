@@ -10,6 +10,11 @@
     <div class="container">
     <section>
         <article>
+            {% if page.videoUrl %}
+              <video controls style="max-width:100%;">
+                <source src="{{ page.videoUrl }}">
+              </video>
+            {% endif %}
            {{content}}
         </article>
             {% include main-menu-aside.html %}
