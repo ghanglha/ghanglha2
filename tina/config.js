@@ -19,6 +19,7 @@ export default defineConfig({
       mediaRoot: "assets/images/",
       publicFolder: "./"
     },
+    accept: ['image/jpeg', 'image/png', 'image/gif', 'image/webp', 'video/mp4', 'video/webm', 'video/quicktime'],
   },
   schema: {
     collections: [
@@ -90,7 +91,7 @@ export default defineConfig({
             label: "Featured Image",
           },
           {
-            type: "string",
+            type: "image",
             name: "videoUrl",
             label: "Video URL",
           },
