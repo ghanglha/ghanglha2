@@ -91,6 +91,11 @@ export default defineConfig({
           },
           {
             type: "string",
+            name: "videoUrl",
+            label: "Video URL",
+          },
+          {
+            type: "string",
             name: "excerpt",
             label: "Excerpt",
             description: 'Optional',
